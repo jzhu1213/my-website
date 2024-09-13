@@ -69,3 +69,14 @@ footer {
 .project-card a:hover {
     text-decoration: underline;
 }
+
+#social a {
+    margin: 0 10px;
+    color: #2980b9;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+#social a:hover {
+    color: #1f6391;
+}
