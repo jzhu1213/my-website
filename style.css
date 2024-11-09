@@ -71,12 +71,39 @@ footer {
 }
 
 #social a {
-    margin: 0 10px;
+    padding: 0px;
     color: #2980b9;
-    font-size: 24px;
+    font-size: 18px;
     text-decoration: none;
+}
+
+#connect a {
+    padding: 30px;
+    font-size: 14px;
 }
 
 #social a:hover {
     color: #1f6391;
+}
+
+.project-container {
+    display: flex;
+    gap: 20px;
+}
+
+#computerscience-cmsc131, #computerscience-cmsc132 {
+    flex: 1;
+}
+
+section {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+    .project-container {
+        flex-direction: column;
+    }
 }
