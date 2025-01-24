@@ -5,176 +5,185 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>James Zhu's Website</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 <body>
     <header>
-        <h1>James Zhu's Personal Portfolio</h1>
-        <p style="text-align:center">(Coded Completely From Scratch on Visual Studio Code...Work In Progress)</p>
-        <h4>jzhu1213@umd.edu | jimmy3zhu@gmail.com</h4>
         <nav>
-            <a href="#computerscience">Computer Science</a>
-            <a href="#accounting">Accounting</a>
-            <a href="#otherworks">Other Works</a>
-            <a href="#workexperience">Work Experience</a>
-            <a href="#resume">Resume</a>
-
+            <div class="left">
+                <a href="#about-section">James Zhu</a>
+            </div>
+            <div class="right">
+                <a href="#about-section">About</a>
+                <a href="#projects-section">Projects</a>
+                <a href="#skills-section">Skills</a>
+                <a href="#connect">Connect</a>
+            </div>
         </nav>
     </header>
-    <main>
-        <p>My name is James (Jimmy) Zhu and I am a Computer Science and Accounting dual-degree student at the University of Maryland.
-            Below are different sections of my personal and student life.
-        </p>
-
-
-        <section id="computerscience">
-            <h2 style="text-align:center">Computer Science</h2>
-
-            <div class="project-container">
-
-            <section id="computerscience-cmsc131">
-            <p>CMSC131 Projects (Google Drive):<br>
-                <br><a href="https://drive.google.com/drive/folders/1O4FCGg1m-AOaS8u-xwIZIK6_kKFDi4Ml?usp=sharing">ArrayUtilities</a>
-                <br>- Basic math methods like calculating area, dividing, and a random color generator.
-                <br><a href="https://drive.google.com/drive/folders/1UrT2XSNyP5Gh-sthARJGQCijNQiS6UV0?usp=sharing">DrawingApp</a>
-                <br>- Basic math methods such as calculating area, dividing, and a random color generator.
-                <br><a href="https://drive.google.com/drive/folders/1qf707QkOOofyXB2wi1gKvvo1iDOCGern?usp=sharing">JavaBasicsCond</a>
-                <br>- Methods to retrive and modify data in different arrays such as rotations and filtering.
-                <br><a href="https://drive.google.com/drive/folders/1qkWr3akGepvzr6RXlbtGxo10AEoJ8YQp?usp=sharing">JavaLoops</a>
-                <br>- Basic classes that utilizes loops in different way.
-                <br><a href="https://drive.google.com/drive/folders/1RqEs-wUgeRU1Kg-srWboW9Ro8VSypBEW?usp=sharing">MediaRentalManager</a>
-                <br>- Media rental system where customers can be added to a system and rent movies and albums.
-                <br><a href="https://drive.google.com/drive/folders/1KKjlvkH3lDaERzRd7geuEnX2OeME3acI?usp=sharing">PassportClass</a>
-                <br>- Passport system that records different peoples' passports and adds stamps.
-                <br><a href="https://drive.google.com/drive/folders/1WR3PQGVFhGL4-CcrD0a1qtp5lxXDTf-c?usp=sharing">PhotoManager</a>
-                <br>- Photo manager system that utilizes arraylists to record photo descriptions and retrives and modifies data.
-                <br><a href="https://drive.google.com/drive/folders/1I1-TdE36hy1EdwrLoDlavjet7gIleKUE?usp=sharing">PhotoProcessingSys</a>
-                <br>- Photo processing system that displays and sells photos to customers.
-                </section>
+    
+    <section id="about-section">
+        <h2>Hey World, I'm James!</h2>
+        <div class="headshot">
+            <picture>
+                <img src="path_to_your_headshot.jpg" alt="James Zhu headshot">
+            </picture>
+        </div>
+        
+        <div class="bio">
+            <p>
+                I'm a Computer Science and Accounting dual-degree student at the University of Maryland, 
+                passionate about technology and innovation. With a strong technical background and 
+                interdisciplinary approach, I'm always eager to explore new challenges.
             </p>
-            <section id="computerscience-cmsc132">
-            <p>CMSC132 Projects (Google Drive):<br>
-                <br><a href="https://drive.google.com/drive/folders/1OLhs0Y42GzatpZuv3a8HT3t3GVb39y5E?usp=sharing">BinarySearchTree</a>
-                <br>- Standard modification, iteration, and retrieval methods for binary search trees.
-                <br><a href="https://drive.google.com/drive/folders/10aSkauCcdlh3lwwHnCoN2fYYf5dKqfOR?usp=sharing">BounceQuest</a>
-                <br>- Original game, player controls sliding wall to bounce a ball into coins and achieve the highest score.
-                <br><a href="https://drive.google.com/drive/folders/1YD-qYgnxapUbjBQ_ZbGXBxjx5Zmqu3R2?usp=sharing">ClearCellGame</a>
-                <br>- Tetris-like game where players click blocks of different colors as they fall to remove them and prevent from hitting the bottom.
-                <br><a href="https://drive.google.com/drive/folders/1dyLuMVGe4oyGPfe02KZ0IM7B13W0Y_So?usp=sharing">Graphs</a>
-                <br>- Standard modification, iteration, and retrieval methods for graphs.
-                <br><a href="https://drive.google.com/drive/folders/1Nb0IowqhoJ_PbBnouK_7te5XURZPY4_y?usp=sharing">LinkedList</a>
-                <br>- Standard modification, iteration, and retrieval methods for linked lists.
-                <br><a href="https://drive.google.com/drive/folders/1uv6N6-CmLPHTL78Di-xzM4JEfQMQHOZO?usp=sharing">OnlineTest</a>
-                <br>- Test simulator that adds true/false, multiple choice, and fill-in-the-blank questions to a test, allowing students to answer them.
-                <br><a href="https://drive.google.com/drive/folders/1DG-Md45PvhfKlgCSpJDbeKmMhyfs7juU?usp=sharing">OrdersProcessor</a>
-                <br>- Order processing system that uses threads to take in and take out files of orders containing items and prices.
-                <br><a href="https://drive.google.com/drive/folders/13X0AnchhTkVZkb2a8WHtAwS5Pq8WeWpu?usp=sharing">TubesVideoManager</a>
-                <br>- Media manager that keeps track of inputed movies, songs, and videos in a databse.
-                <br><a href="https://drive.google.com/drive/folders/1ERDfkwZGCUjSI-YDZWhRRxThkLPwlBpd?usp=sharing">WebPageGen</a>
-                <br>- Web page generator using java methods to convert inputs into html.
-                <br><a href="https://drive.google.com/drive/folders/1OpzO15b001COR1ENxxEyDCuVRXor2KGB?usp=sharing">Threads</a>
-                <br>- Standard modification, multi-threading, and locking methods for threads.
-            </section>
+            <br>
+            <p>
+                When I'm not coding or studying, I enjoy exploring the intersections of technology 
+                and business, working on personal projects, and continuously learning.
             </p>
+        </div>
+        
+        <div class="social-links">
+            <a href="https://github.com/jzhu1213" target="_blank">
+                <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://linkedin.com/in/james-zhu1" target="_blank">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="mailto:jimmy3zhu@gmail.com" target="_blank">
+                <i class="fa-solid fa-envelope"></i>
+            </a>
+        </div>
+    </section>
 
+    <div class="divider"></div>
+    
+    <section id="projects-section">
+        <h2>Projects</h2>
+        
+        <div class="project-subsection">
+            <h3>Computer Science</h3>
+            <div class="swiper card-swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="https://drive.google.com/drive/folders/1lHH-6WXdTmdnOxvwzOAfZgmnHwGASI_X?usp=sharing" class="project-box">
+                            <!-- <img src="path_to_project_image.jpg" alt="CMSC132"> -->
+                            <h4>CMSC131</h4>
+                            <h5><em>Object Oriented Programming I</em></h5>
+                            <p>Basic Data Structures, Classes</p>
+                            <br>
+                            <p>Java</p>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="https://drive.google.com/drive/folders/1OLhs0Y42GzatpZuv3a8HT3t3GVb39y5E?usp=sharing" class="project-box">
+                            <!-- <img src="path_to_project_image.jpg" alt="CMSC132"> -->
+                            <h4>CMSC132</h4>
+                            <h5><em>Object Oriented Programming II</em></h5>
+                            <p>Advanced Data Structures, File IO, Algorithms</p>
+                            <br>
+                            <p>Java</p>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="https://drive.google.com/drive/folders/1xR2UWNJxA9h2Tvh1t_pjhS6s5mpoBu6D?usp=sharing" class="project-box">
+                            <!-- <img src="path_to_project_image.jpg" alt="CMSC132"> -->
+                            <h4>CMSC216</h4>
+                            <h5><em>Introduction to Computer Systems</em></h5>
+                            <p>Systems Programming, Assembly</p>
+                            <br>
+                            <p>C, UNIX, Linux</p>
+                        </a>
+                    </div>
+                    <!-- Add more project slides similar to the above structure -->
+                </div>
             </div>
+        </div>
+        
+        <div class="project-subsection">
+            <h3>Accounting</h3>
+            <div class="swiper card-swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="https://docs.google.com/spreadsheets/d/140D99KeuthVOy7_JLzzuCaAJMTnYwl9C/edit?usp=sharing" class="project-box">
+                            <img src="path_to_project_image.jpg" alt="Loan Amortization">
+                            <h4>Loan Amortization</h4>
+                            <h5><em>Excel</em></h5>
+                            <p>Detailed loan amortization scheduler with comprehensive financial calculations.</p>
+                        </a>
+                    </div>
+                    <!-- Add more project slides similar to the above structure -->
+                </div>
+            </div>
+        </div>
+    </section>
 
-            <p>CMSC216 Projects:<br>
-                <br><a href="https://drive.google.com/drive/folders/1yRIObgsKHOos24X6sxzEzmnZ74pJUQ26?usp=sharing">Candidate Vote System</a>
-                <br>- Voting system that stores tallies containing each voter's candidate vote order, name, and id. 
-                <br><a href="https://drive.google.com/drive/folders/1XTJ4yoKccUTXQRZmRkCz60bdf53T1lnm?usp=sharing">Clock, Puzzles, TreeMap</a>
-                <br>
-                - Part 1: Clock Simulator that takes seconds * 16 as input and displays the time as input from midnight.<br>
-                - Part 2: Puzzles involving bit-masking, binary/hex/ASCII, and math theorems.<br>
-                - Part 3: Standard modification, iteration, retrieval, and file writing/loading for TreeMaps.<br>
-                <a href="https://drive.google.com/drive/folders/1oCMxmP_a-zcJXjNhYlJkSqfbnlGulz0s?usp=sharing">Clock Assembly, Puzzlebin</a>
-                <br>
-                - Part 1: Clock class from Project 2 translated into assembly. <br>
-                - Part 2: Puzzles written in assembly involving bit-masking, binary/hex/ASCII, and math theorems.<br>
-                <br>Updating Weekly...
-            </p>
-            <p><h4>Personal Projects:</h4>
-                <a href="https://jzhu1213.github.io/my-website/">This Website!</a><br>
-                <a href="https://docs.google.com/spreadsheets/d/140D99KeuthVOy7_JLzzuCaAJMTnYwl9C/edit?usp=sharing&ouid=116895249914208277147&rtpof=true&sd=true">Loan Calculator (Excel)</a>
-            </p>
-            <p>All computer science work on <a href="https://github.com/jzhu1213">GitHub</a>.</p>
-        </section>
-
-
-        <section id="accounting">
-            <h2 style="text-align:center">Accounting</h2>
-            <p><h4>College Courses:</h4>
-                Accounting I, Accounting II<br>
-                Business Finance<br>
-                Intro to Information Systems
-            </p>
-            <p><h4>Projects:</h4>
-                <a href="https://docs.google.com/spreadsheets/d/140D99KeuthVOy7_JLzzuCaAJMTnYwl9C/edit?usp=sharing&ouid=116895249914208277147&rtpof=true&sd=true">Loan Calculator (Excel)</a>
-            </p>
-            <br>More to come...
-        </section>
-
-        <section id="otherworks">
-            <h2 style="text-align:center">Other Works</h2>
-            <h4>Space Debris Position Paper and College Park Scholars Research Project</h4>
-            <p>College Park Scholars is nationally acclaimed living learning program at the University of Maryland. 
-                Of the various programs, I 
-
-                Science, Technology and Society (STS) seeks to understand the challenges standing between the present we have and the future we want.
-                As a College Park Scholar in the Science, Technology, and Society (STS) program, students are challenged
-                to apply principles of science and technology in conjunction to current events and voice concerns.
-                My chosen topic was Space Debris:
-                <p><a href="https://drive.google.com/file/d/1DsmkMo1G7RFpbyHeBCEwfRx6iSB_0Itu/view?usp=sharingf">Position Paper</a>
-                <br><a href="https://drive.google.com/file/d/1pB3d1ccjIU_WI58dP-i5pAEF9pBAHFKO/view?usp=sharing">Research Paper</a>
-                </p>
-            </p>
-        </section>
-
-        <section id="workexperience">
-            <h2 style="text-align:center">Work Experience</h2>
-            <h4>Audio/Visual Technician for the University of Maryland STAMP Student Union (June 2024 - Present)</h4>
-                <p>
-                Audio/Visual Technician for Adele H. Stamp Student Union at the University of Maryland, College Park. 
-                Working to organize and prepare all audio/visual equipment needed for events throughout Stamp. 
-                Meet with clients throughout the day to discuss room layouts and requirements, 
-                technology systems required, then monitor event progression and meet any additional needs. 
-                Cooperate with coworkers and management to organize inventory, keep track of client needs, 
-                as well as monitor events in coordination with other departments. 
-                Occasionally work on-site directly with client for DJ, light cues, and presentation duties. 
-                </p>
-            <h4>Information Technology Intern for Baltimore County Public Schools (August 2022 - June 2023)</h4>
-                <p>
-                Information Technology Intern for Baltimore County Public Schools at Dulaney High School. 
-                Working with other students and teachers to assess, diagnose, and resolve technology issues throughout the school. 
-                Some front-end software learning and development to keep computers updated and factory wiping. 
-                Mostly hardware solutions such as computer, projectors, mics/receivers, and PC parts. 
-                Create and monitor online Master Schedule of all teachers and students throughout school hours to track locations and free periods. 
-                Develop online and physical ticket system for students and teachers to submit technology issues/requests.
-                </p>
-        </section>
-
-
-        <section id="resume">
-    <h2 style="text-align:center">Resume</h2>
-    <p style="text-align:center">Resume Overview and Dowload:<br>
-        <br><embed src="https://jzhu1213.github.io/my-website/pdfs/Resume - James Zhu.pdf" width="600px" height="830px"/>
-    <p style="text-align:center">Unofficial Transcript:<br>
-        <br><embed src="https://jzhu1213.github.io/my-website/pdfs/Unofficial Transcript.pdf" width="500px" height="700px" />
-    </p>
-</section>
-
-
-        <section id="social">
-            <h4>Connect With Me:</h4>
-            <a href="https://github.com/jzhu1213">GitHub</a><br>
-            <a href="https://linkedin.com/in/james-zhu1">LinkedIn</a>
-        </section>
-
-    </main>
-    <section id="connect">
-        <p>&copy;James Zhu's Website 2025</p>
-        <p>Open To Work!</p>
+    <div class="divider"></div>
+    
+    <section id="skills-section">
+        <h2>Skills</h2>
+        <div class="skills-container">
+            <div class="skill-item">
+                <i class="fa-brands fa-python"></i>
+                <span>Python</span>
+            </div>
+            <div class="skill-item">
+                <i class="fa-brands fa-java"></i>
+                <span>Java</span>
+            </div>
+            <div class="skill-item">
+                <i class="fa-brands fa-html5"></i>
+                <span>HTML</span>
+            </div>
+            <div class="skill-item">
+                <i class="fa-brands fa-css3"></i>
+                <span>CSS</span>
+            </div>
+            <div class="skill-item">
+                <i class="fa-brands fa-js"></i>
+                <span>JavaScript</span>
+            </div>
+            <div class="skill-item">
+                <i class="fa-brands fa-git-alt"></i>
+                <span>Git</span>
+            </div>
+            <div class="skill-item">
+                <i class="fa-solid fa-c"></i>
+                <span>C</span>
+            </div>
+        </div>
     </section>
     
-        <script src="script.js"></script>
 
+    <div class="divider"></div>
+    
+    <section id="connect">
+        <h2>Connect With Me</h2>
+        <p>Feel free to reach out via email or connect on professional networks.</p>
+    </section>
+
+    <footer>
+        <p>&copy; <span id="year"></span> James Zhu. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            document.getElementById('year').textContent = new Date().getFullYear();
+    
+            const swiper = new Swiper(".card-swiper", {
+                centeredSlides: false,
+                spaceBetween: 0,
+                slidesPerView: 'auto'
+            });
+        });
+    </script>
 </body>
+</html>
