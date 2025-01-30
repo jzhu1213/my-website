@@ -189,20 +189,29 @@ section h2::after {
 }
 
 /* Resume Section */
-.resume-description h3 {
-    margin-bottom: 1rem;
-    color: var(--primary-color);
+.resume-container {
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    gap: 2rem;
+    max-width: 80%;
+    margin: auto;
 }
 
-@media (max-width: 768px) {
-    .resume-container {
-        flex-direction: column;
-    }
-    
-    .resume-pdf, 
-    .resume-description {
-        max-width: 100%;
-    }
+.resume-pdf {
+    flex: 1;
+    max-width: 50%;
+}
+
+.resume-pdf embed {
+    width: 100%;
+    height: 500px;
+    border: none;
+}
+
+.resume-description {
+    flex: 1;
+    max-width: 50%;
 }
 
 /* Skills Section */
