@@ -26,15 +26,12 @@ window.addEventListener('scroll', () => {
     });
 });
 
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-<script>
-    document.addEventListener("DOMContentLoaded", function () {
-        document.getElementById('year').textContent = new Date().getFullYear();
+document.addEventListener("DOMContentLoaded", function () {
+    document.getElementById('year').textContent = new Date().getFullYear();
 
-        const swiper = new Swiper(".card-swiper", {
-            centeredSlides: false,
-            spaceBetween: 0,
-            slidesPerView: 'auto'
-        });
+    const swiper = new Swiper(".card-swiper", {
+        centeredSlides: false,
+        spaceBetween: 0,
+        slidesPerView: 'auto'
     });
-</script>
+});
