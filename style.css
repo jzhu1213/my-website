@@ -231,6 +231,7 @@ nav .right a.active::after {
         opacity: 1;
         transform: translateY(0);
     }
+}
 
 @keyframes activeIndicator {
     from {
@@ -241,6 +242,7 @@ nav .right a.active::after {
         width: 20px;
         opacity: 1;
     }
+}
 
 @keyframes activePulse {
     0%, 100% {
@@ -249,6 +251,7 @@ nav .right a.active::after {
     50% {
         box-shadow: 0 4px 25px rgba(52, 152, 219, 0.6);
     }
+}
 
 /* ===== SECTIONS ===== */
 section {
@@ -358,12 +361,6 @@ section h2::after {
 }
 
 #about-section .headshot img:hover {
-    transform: scale(1.1);
-}
-
-@keyframes rotate {
-    from { transform: rotate(0deg); }
-    to { transform: rotate(360deg); }
     transform: scale(1.1);
 }
 
@@ -1178,6 +1175,7 @@ footer {
             flex-wrap: wrap;
             justify-content: center;
         }
+    }
 
     .connect-methods {
         grid-template-columns: 1fr;
