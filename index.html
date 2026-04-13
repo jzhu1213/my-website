@@ -3,401 +3,160 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>James Zhu's Website</title>
-    <link rel="stylesheet" href="style.css">
+    <title>James Zhu</title>
+    <meta name="description" content="Minimal black-and-white portfolio for James Zhu.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="left">
-                <a href="#about-section">JZ</a>
-            </div>
-            <div class="right">
-                <a href="#about-section">About</a>
-                <a href="#projects-section">Projects</a>
-                <a href="#work-section">Experience</a>
-                <a href="#resume-section">Resume</a>
-                <a href="#skills-section">Skills</a> 
-                <a href="#connect-section">Connect</a>
-            </div>
-        </nav>
-    </header>
-    
-    <section id="about-section">
-        <h2>James Zhu's Website</h2>
-        <h4>Built originally with HTML, CSS, and JavaScript 2022. Now a Vibecoding and AI Playground.</h4>
-        <div class="headshot">
-            <img src="images/headshot.png" alt="James Zhu headshot">
-        </div>
-        
-        <div class="bio">
-            <p>
-                I'm a rising junior at the University of Maryland, College Park, where I'm pursuing a dual-degree in
-                Computer Science and Accounting. With a strong background in both technology and business, I'm always 
-                eager to explore new challenges.
-            </p>
-            <p>
-                Currently interning with ASICS in Boston, MA.
-                <br>
-                Member of Delta Sigma Pi (ΔΣΠ), the nation's foremost business fraternity.
-                <br>
-                <br>
-                Check out my projects and experiences below!
-            </p>
-        </div>
-        
-        <div class="social-links">
-            <a href="https://github.com/jzhu1213" target="_blank" aria-label="GitHub">
-                <i class="fa-brands fa-github"></i>
-            </a>
-            <a href="https://linkedin.com/in/james-zhu1" target="_blank" aria-label="LinkedIn">
-                <i class="fa-brands fa-linkedin"></i>
-            </a>
-            <a href="mailto:jimmy3zhu@gmail.com" aria-label="Email">
-                <i class="fa-solid fa-envelope"></i>
-            </a>
-        </div>
-    </section>
+    <div class="site-shell">
+        <header class="site-header">
+            <nav class="site-nav">
+                <a class="brand" href="index.html">JZ</a>
+                <button class="menu-toggle" type="button" aria-expanded="false" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                </button>
+                <div class="nav-links">
+                    <a class="is-active" href="index.html">Home</a>
+                    <a href="projects.html">Projects</a>
+                    <a href="experience.html">Experience</a>
+                    <a href="resume.html">Resume</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+            </nav>
+        </header>
 
-    <section id="projects-section">
-        <h2>Projects</h2>
-        
-        <div class="project-subsection">
-            <h3>Computer Science</h3>
-            <div class="swiper card-swiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <a href="https://github.com/jzhu1213/StockML" target="_blank" class="project-box">
-                            <img src="images/stockml.png" alt="StockML">
-                            <h4>Stock ML</h4>
-                            <p>Machine Learning Stock Predictor</p>
-                            <p>Python</p>
-                        </a>
+        <main>
+            <section class="hero">
+                <div class="hero-copy">
+                    <p class="eyebrow">James Zhu</p>
+                    <h1>Web Development Intro. Vibecoding and AI Playground.</h1>
+                    <p class="lede">
+                        Junior at the University of Maryland studying Computer Science and Accounting.
+                    </p>
+                    <div class="hero-actions">
+                        <a class="button button-primary" href="projects.html">See projects</a>
+                        <a class="button button-secondary" href="contact.html">Say hi</a>
                     </div>
-                    <div class="swiper-slide">
-                        <a href="https://drive.google.com/drive/folders/1lHH-6WXdTmdnOxvwzOAfZgmnHwGASI_X?usp=sharing" target="_blank" class="project-box">
-                            <img src="images/cmsc131.png" alt="CMSC131">
-                            <h4>CMSC131</h4>
-                            <h5><em>Object Oriented Programming I</em></h5>
-                            <p>Basic Data Structures, Classes</p>
-                            <p>Java</p>
-                        </a>
-                    </div>
-                    <div class="swiper-slide">
-                        <a href="https://drive.google.com/drive/folders/19phppdd_1SvUDUydnDfL2ARhjaYuCxwE?usp=sharing" target="_blank" class="project-box">
-                            <img src="images/cmsc132.png" alt="CMSC132">
-                            <h4>CMSC132</h4>
-                            <h5><em>Object Oriented Programming II</em></h5>
-                            <p>Advanced Data Structures, File IO, Algorithms</p>
-                            <p>Java</p>
-                        </a>
-                    </div>
-                    <div class="swiper-slide">
-                        <a href="https://drive.google.com/drive/folders/1xR2UWNJxA9h2Tvh1t_pjhS6s5mpoBu6D?usp=sharing" target="_blank" class="project-box">
-                            <img src="images/cmsc216.png" alt="CMSC216">
-                            <h4>CMSC216</h4>
-                            <h5><em>Introduction to Computer Systems</em></h5>
-                            <p>Systems Programming, Assembly</p>
-                            <p>C, UNIX, Linux</p>
-                        </a>
-                    </div>
-                    <div class="swiper-slide">
-                        <a href="https://drive.google.com/drive/folders/1Oc7R1DH1erBA2fLZFpAqJqlWj_NwsAJ3?usp=sharing" target="_blank" class="project-box">
-                            <img src="images/cmsc330.jpg" alt="CMSC330">
-                            <h4>CMSC330</h4>
-                            <h5><em>Organization of Programming Languages</em></h5>
-                            <p>Functional Programming</p>
-                            <p>OCaml, Rust</p>
-                        </a>
+                    <ul class="inline-meta">
+                        <li>Seattle /Boston / Maryland</li>
+                        <li>Incoming Financial Analyst Intern @ Amazon</li>
+                    </ul>
+                </div>
+                <div class="hero-media">
+                    <div class="portrait-frame">
+                        <img src="images/headshot.png" alt="Portrait of James Zhu">
                     </div>
                 </div>
-            </div>
-        </div>
-        
-        <div class="project-subsection">
-            <h3>Business</h3>
-            <div class="swiper card-swiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <a href="https://docs.google.com/spreadsheets/d/1Bi060Ka8kN-__hY7s2h7xP6XiX4BW5NF/edit?usp=sharing&ouid=116895249914208277147&rtpof=true&sd=true" target="_blank" class="project-box">
-                            <img src="images/excel.png" alt="Loan Amortization Scheduler">
-                            <h4>Loan Amortization Scheduler</h4>
-                            <p>LAS with comprehensive financial calculations</p>
-                        </a>
-                    </div>
-                    <div class="swiper-slide">
-                        <a href="https://drive.google.com/drive/folders/1h0Q-oVslvOb5w0sgaJ4NuAoAmg_x7I1q?usp=sharing" target="_blank" class="project-box">
-                            <img src="images/excel.png" alt="Excel Projects">
-                            <h4>Other Excel Projects</h4>
-                            <p>Financial Statements, Budgeting, Costing</p>
-                        </a>
-                    </div>
-                    <div class="swiper-slide">
-                        <a href="https://github.com/jzhu1213/business-analytics?tab=readme-ov-file" target="_blank" class="project-box">
-                            <img src="images/sql.jpg" alt="Business Analytics">
-                            <h4>Business Analytics</h4>
-                            <p>SQL</p>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+            </section>
 
-    <section id="work-section">
-        <h2>Work Experience</h2>
-        <div class="work-container">
-            <div class="work-item">
-                <img src="images/asics.png" alt="ASICS Logo">
-                <div class="work-description">
-                    <h3>IT Analyst Intern</h3>
-                    <p>As an IT Analyst Intern at ASICS, I analyze and optimize ServiceNow 
-                        workflows in alignment with ITIL best practices and global standards. 
-                        I support IT governance by identifying outdated services, tracking key 
-                        performance indicators (KPIs), and recommending improvements to enhance 
-                        operational efficiency and service delivery. My work contributes to 
-                        streamlining ASICS' IT service portfolio and aligning technology 
-                        initiatives with broader business objectives.</p>
+            <section class="section-grid">
+                <div class="section-copy">
+                    <p class="eyebrow">About</p>
+                    <h2>Tech on one side, business on the other.</h2>
+                    <p>
+                        My background sits between engineering and operations, which means I care about
+                        whether something works, scales, and actually makes sense for the people using it.
+                    </p>
+                    <p>
+                        Right now that looks like ServiceNow workflow analysis at ASICS, campus AV support,
+                        tax prep, and a portfolio of projects that swing between code, data, and finance.
+                    </p>
                 </div>
-            </div>
-            
-            <div class="work-item">
-                <img src="images/stamp.jpeg" alt="UMD Stamp Student Union">
-                <div class="work-description">
-                    <h3>Audio/Visual Technician</h3>
-                    <p>As an Audio/Visual Technician, I played a key role in coordinating and 
-                        optimizing AV setups for a wide range of campus events. I collaborated 
-                        directly with clients to assess their needs, ensuring all technical 
-                        requirements were met and event experiences were enhanced. I worked 
-                        closely with internal departments to streamline operations, guaranteeing 
-                        smooth execution. I also troubleshot and resolved technical issues with 
-                        various AV equipment, such as microphones, projectors, and computers, 
-                        to ensure seamless event operations.</p>
+                <div class="stat-stack">
+                    <article class="stat-card">
+                        <span class="stat-label">Focus</span>
+                        <strong>Systems, analytics, practical builds</strong>
+                    </article>
+                    <article class="stat-card">
+                        <span class="stat-label">Languages</span>
+                        <strong>Python, Java, C, JavaScript, SQL</strong>
+                    </article>
+                    <article class="stat-card">
+                        <span class="stat-label">Working style</span>
+                        <strong>Minimal, methodical, low-ego</strong>
+                    </article>
                 </div>
-            </div>
-    
-            <div class="work-item">
-                <img src="images/bcps.png" alt="Baltimore County Public Schools">
-                <div class="work-description">
-                    <h3>IT Intern - Baltimore County Public Schools</h3>
-                    <p>During my internship with Baltimore County Public Schools, I developed 
-                        and implemented software updates to improve device performance and 
-                        reliability across the district. I diagnosed and resolved hardware 
-                        issues, ensuring uninterrupted operations for essential equipment such 
-                        as computers, projectors, and other devices. Additionally, I managed 
-                        inventory systems and worked on refining ticketing processes, which 
-                        greatly enhanced the efficiency of issue resolution workflows.</p>
-                </div>
-            </div>
-    
-            <div class="work-item">
-                <img src="images/terptax.jpg" alt="TerpTax">
-                <div class="work-description">
-                    <h3>Volunteer Tax Preparer - TerpTax</h3>
-                    <p>TerpTax is a student-run organization that provides free tax preparation services 
-                        to the local community, primarily assisting low-income individuals and families. 
-                        Through this program, students gain hands-on experience in tax preparation and 
-                        financial services, working directly with clients under the guidance of experienced 
-                        professionals. As part of TerpTax, I contributed to assisting the community while 
-                        gaining valuable skills in tax law and client interaction.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+            </section>
 
-    <section id="resume-section">
-        <h2>Resume</h2>
-        <div class="resume-container">
-            <div class="resume-pdf">
-                <embed src="pdfs/James_Zhu_Resume.pdf" type="application/pdf" width="100%" height="1000px">
-            </div>
-            <div class="resume-description">
-                <h3>Professional Overview</h3>
-                <p>
-                    James Zhu is a driven and well-rounded dual-degree candidate at the University of Maryland, 
-                    pursuing Bachelor of Science degrees in both Computer Science and Accounting. With a strong 
-                    academic record (GPA: 3.66), James combines technical proficiency in programming languages 
-                    like Python, Java, and C with a solid foundation in finance, business, and data analysis. 
-                    His academic experiences are further enriched by his involvement in selective programs like 
-                    College Park Scholars and the professional business fraternity Delta Sigma Pi, which emphasize 
-                    leadership, professional development, and the intersection of technology and society. 
-                    Professionally, James has demonstrated versatility through impactful internships and 
-                    on-campus roles. At ASICS, he currently supports IT operations by optimizing ServiceNow 
-                    workflows, assisting over 200 employees, and contributing to IT governance through KPI tracking. 
-                    His hands-on experience spans diverse roles including AV coordination for 500+ campus events, 
-                    technical support at Baltimore County Public Schools, and tax preparation at TerpTax. 
-                    He supplements his work experience with personal projects, such as a machine learning stock 
-                    price predictor and an accounting tools suite, showcasing his initiative and ability to apply 
-                    his skills in real-world contexts. Fluent in English, Mandarin, and conversational Shanghai 
-                    Chinese, James brings both technical acumen and cross-functional collaboration to any team.
-                </p>
-            </div>
-        </div>
-    </section>
-    
-    <section id="skills-section">
-        <h2>Skills</h2>
-        <div class="skills-container">
-            <div class="skill-category">
-                <h3>Programming Languages</h3>
-                <div class="skill-items">
-                    <div class="skill-item">
-                        <i class="fa-brands fa-python"></i>
-                        <span>Python</span>
-                    </div>
-                    <div class="skill-item">
-                        <i class="fa-brands fa-java"></i>
-                        <span>Java</span>
-                    </div>
-                    <div class="skill-item">
-                        <i class="fa-solid fa-c"></i>
-                        <span>C</span>
-                    </div>
-                    <div class="skill-item">
-                        <i class="fa-brands fa-js"></i>
-                        <span>JavaScript</span>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="skill-category">
-                <h3>Web Technologies</h3>
-                <div class="skill-items">
-                    <div class="skill-item">
-                        <i class="fa-brands fa-html5"></i>
-                        <span>HTML</span>
-                    </div>
-                    <div class="skill-item">
-                        <i class="fa-brands fa-css3"></i>
-                        <span>CSS</span>
-                    </div>
-                    <div class="skill-item">
-                        <i class="fa-brands fa-react"></i>
-                        <span>React</span>
-                    </div>
-                    <div class="skill-item">
-                        <i class="fa-brands fa-node-js"></i>
-                        <span>Node.js</span>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="skill-category">
-                <h3>Tools & Platforms</h3>
-                <div class="skill-items">
-                    <div class="skill-item">
-                        <i class="fa-brands fa-git-alt"></i>
-                        <span>Git</span>
-                    </div>
-                    <div class="skill-item">
-                        <i class="fa-brands fa-github"></i>
-                        <span>GitHub</span>
-                    </div>
-                    <div class="skill-item">
-                        <i class="fa-solid fa-database"></i>
-                        <span>SQL</span>
-                    </div>
-                    <div class="skill-item">
-                        <i class="fa-solid fa-chart-line"></i>
-                        <span>Excel</span>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="skill-category">
-                <h3>Additional Skills</h3>
-                <div class="skill-items">
-                    <div class="skill-item">
-                        <i class="fa-solid fa-brain"></i>
-                        <span>Machine Learning</span>
-                    </div>
-                    <div class="skill-item">
-                        <i class="fa-solid fa-chart-bar"></i>
-                        <span>Data Analysis</span>
-                    </div>
-                    <div class="skill-item">
-                        <i class="fa-solid fa-users"></i>
-                        <span>Team Leadership</span>
-                    </div>
-                    <div class="skill-item">
-                        <i class="fa-solid fa-language"></i>
-                        <span>Bilingual (EN/CN)</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    <section id="connect-section">
-        <h2>Connect With Me</h2>
-        <div class="connect-content">
-            <div class="connect-intro">
-                <p>I'm always interested in new opportunities, collaborations, and connecting with fellow professionals. Whether you'd like to discuss potential projects, share insights, or just say hello, I'd love to hear from you!</p>
-            </div>
-            
-            <div class="connect-methods">
-                <div class="connect-method">
-                    <div class="connect-icon">
-                        <i class="fa-solid fa-envelope"></i>
-                    </div>
-                    <div class="connect-details">
-                        <h3>Email</h3>
-                        <p>jimmy3zhu@gmail.com</p>
-                        <p>Feel free to email me whenever</p>
-                    </div>
-                </div>
-                
-                <div class="connect-method">
-                    <div class="connect-icon">
-                        <i class="fa-brands fa-linkedin"></i>
-                    </div>
-                    <div class="connect-details">
-                        <h3>LinkedIn</h3>
-                        <p>Connect for professional or social networking</p>
-                    </div>
-                </div>
-                
-                <div class="connect-method">
-                    <div class="connect-icon">
-                        <i class="fa-brands fa-github"></i>
-                    </div>
-                    <div class="connect-details">
-                        <h3>GitHub</h3>
-                        <p>Check out my coding projects</p>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="connect-availability">
-                <h3>Current Availability</h3>
-                <div class="availability-info">
-                    <div class="availability-item">
-                        <i class="fa-solid fa-briefcase"></i>
-                        <span>Incoming Financial Analyst Intern @ Amazon</span>
-                    </div>
-                    <div class="availability-item">
-                        <i class="fa-solid fa-users"></i>
-                        <span>Available for Collaborative Projects</span>
-                    </div>
-                    <div class="availability-item">
-                        <i class="fa-solid fa-graduation-cap"></i>
-                        <span>Graduating Spring 2027</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+            <section class="feature-strip">
+                <article class="feature-card">
+                    <p class="eyebrow">Projects</p>
+                    <h3>Code, coursework, and business builds.</h3>
+                    <p>Machine learning, systems classes, Excel models, and SQL work all live here.</p>
+                    <a class="text-link" href="projects.html">Open projects</a>
+                </article>
+                <article class="feature-card">
+                    <p class="eyebrow">Experience</p>
+                    <h3>Internships and roles that kept things moving.</h3>
+                    <p>Operations, technical support, governance, and client-facing problem solving.</p>
+                    <a class="text-link" href="experience.html">View experience</a>
+                </article>
+                <article class="feature-card">
+                    <p class="eyebrow">Resume</p>
+                    <h3>The straight version.</h3>
+                    <p>PDF, overview, and a quick read on what I bring to a team.</p>
+                    <a class="text-link" href="resume.html">Read resume</a>
+                </article>
+            </section>
 
-    <footer>
-        <p>&copy; <span id="year"></span> James Zhu. All Rights Reserved.</p>
-    </footer>
+            <section class="section-grid">
+                <div class="section-copy">
+                    <p class="eyebrow">Toolbox</p>
+                    <h2>Enough range to move between technical and financial work.</h2>
+                </div>
+                <div class="chip-grid">
+                    <span class="chip">Python</span>
+                    <span class="chip">Java</span>
+                    <span class="chip">C</span>
+                    <span class="chip">JavaScript</span>
+                    <span class="chip">React</span>
+                    <span class="chip">Node.js</span>
+                    <span class="chip">HTML / CSS</span>
+                    <span class="chip">SQL</span>
+                    <span class="chip">Excel</span>
+                    <span class="chip">Git / GitHub</span>
+                    <span class="chip">Machine Learning</span>
+                    <span class="chip">Data Analysis</span>
+                    <span class="chip">ServiceNow</span>
+                    <span class="chip">Bilingual EN / CN</span>
+                </div>
+            </section>
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+            <section class="section-grid callout">
+                <div class="section-copy">
+                    <p class="eyebrow">Connect</p>
+                    <h2>If the work is interesting, I'm in.</h2>
+                    <p>
+                        Open to internships, full-time opportunities, and collaborative projects that sit
+                        somewhere between finance, systems, and product-minded engineering.
+                    </p>
+                </div>
+                <div class="contact-stack">
+                    <a class="contact-line" href="mailto:jimmy3zhu@gmail.com">
+                        <span>@</span>
+                        <span>jimmy3zhu@gmail.com</span>
+                    </a>
+                    <a class="contact-line" href="https://github.com/jzhu1213" target="_blank" rel="noreferrer">
+                        <span>GH</span>
+                        <span>github.com/jzhu1213</span>
+                    </a>
+                    <a class="contact-line" href="https://linkedin.com/in/james-zhu1" target="_blank" rel="noreferrer">
+                        <span>LI</span>
+                        <span>linkedin.com/in/james-zhu1</span>
+                    </a>
+                </div>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <p>&copy; <span id="year"></span> James Zhu</p>
+        </footer>
+    </div>
+
     <script src="script.js"></script>
 </body>
 </html>
